@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url("../sub-visual.css");
+
+
+#visual .content-container{	
+	height:inherit;
+	display:flex; 
+	align-items: center;
+	
+	background: url("../../images/mypage/visual.png") no-repeat center;
+}
+
+/* #visual .icon{
+	background: url("../../images/lecture/visual-icon.png") no-repeat center;
+	background-size:contain;
+	height: inherit;
+	width: 1px;
+	flex-grow: 1;
+}
+
+#visual .text{
+	background: url("../../images/lecture/visual-text.png") no-repeat center;
+	background-size:contain;
+	height: 93px;
+	
+	width: 1px;
+	flex-grow: 1;
+} */
+
+
+/* ==== Desktop만을 위한 Style -- 너비 960px 이상 =========================================================== */
+@media all and (min-width:960px){
+	
+}
+
+/* ==== 테블릿 이하에서 달라질 공통 Style 오버라이드-- 너비 959px 이하 =========================================================== */
+@media all and (max-width:959px){
+	
+/* 	#visual{
+		display:none; 일단 visual을 빼기로 함
+
+	} */
+
+}
+
+/* ==== 중간 크기 장치만을 위한 Style -- 너비 640px~ 959px=========================================================== */
+@media all and (min-width:640px) and (max-width:959px){
+	
+}
+
+/* ==== 스마트 폰처럼 작은 크기 장치만을 위한 Style -- 너비 639px 이하=========================================================== */
+@media all and (max-width:639px){
+/* 	#visual{
+		height: 80px;
+	}
+	
+	#visual .text{		
+		height: 43px;
+		
+	} */
+}

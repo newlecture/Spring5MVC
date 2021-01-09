@@ -1,0 +1,5 @@
+@charset "UTF-8";
+@import url("index-desktop.css");
+/* @import url("index-tablet.css") all and (max-width:959px);
+@import url("index-mobile.css") all and (max-width:479px); */
+@import url("index-visual.css");

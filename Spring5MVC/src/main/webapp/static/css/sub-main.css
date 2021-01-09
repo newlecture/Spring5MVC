@@ -1,0 +1,522 @@
+@charset "UTF-8";
+
+main {
+	position: relative;
+	min-height: inherit;
+	width: 755px;
+	padding-left: 35px;
+	padding-top: 45px;
+	padding-bottom:80px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+}
+
+main .stretch-child{
+	display: flex;	
+	align-items: stretch;
+	align-content: stretch;	
+}
+
+main .stretch-child textarea{
+	align-self: stretch;
+}
+
+main .h300{
+	height: 300px;
+}
+
+main .width-match{
+	width:100%;
+}
+
+main .bg-wood {
+	background: url("../images/course/bg-wood.png");
+}
+
+main .border-bottom {
+	border-bottom: 1px solid #e9e9e9;
+}
+
+main .border-hard{	    
+    border: 5px solid #8CBA34;    
+    text-align: center;
+}
+
+main .align-left {
+	align-self: flex-start;
+}
+
+main .align-center {
+	align-self: center;
+}
+
+main .align-right {
+	align-self: flex-end;
+}
+
+main .valign-middle {
+	vertical-align: middle;
+}
+
+main .title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+main .title.main {
+	font-family: 맑은 고딕, 고딕, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: #646464;
+	padding-left: 25px;
+	background: url("../images/icon-main-title.png") no-repeat left center;
+}
+
+main .title.sub {
+	font-family: 맑은 고딕;
+	font-size: 14px;
+	font-weight: bold;
+	color: #191919;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+	background: url("../images/icon-sub-title.png") no-repeat 0px 10px;
+}
+
+main .margin-top {
+	margin-top: 10px;
+}
+
+main .margin-top-20 {
+	margin-top: 20px;
+}
+
+main .margin-bottom {
+	margin-bottom: 10px;
+}
+
+main .padding-bottom {
+	padding-bottom: 10px;
+}
+
+main .margin-top.first {
+	margin-top: 49px;
+}
+
+/* --- border style------------------------------------------------------------------------- */
+main .border-dashed{
+	border : 2px dashed #e9e9e9;
+}
+
+/* --- breadcrumb ----------------------------------------------------------------------------- */
+main .breadcrumb {
+	position: absolute;
+	right: 0px;
+	top: 57px;
+}
+
+main .breadcrumb .list, main .breadcrumb ul {
+	overflow: auto;
+}
+
+main .breadcrumb .item, main .breadcrumb li {
+	float: left;
+	padding-left: 10px;
+	background: url("../images/icon-path.png") no-repeat left center;
+}
+
+main .breadcrumb .item:first-child, main .breadcrumb li:first-child {
+	padding-left: 20px;
+	background: url("../images/icon-home.png") no-repeat left center;
+}
+
+/* --- search-form ----------------------------------------------------------------------------------------- */
+main .search-form, main .search-form form {
+	display: inline-block;
+}
+
+main .search-form form fieldset>* {
+	vertical-align: middle;
+}
+
+main .search-form select {
+	height: 20px;
+	border: 1px solid #8CBA34;
+}
+
+main .search-form input[type="text"] {
+	width: 150px;
+	height: 20px;
+	border: 1px solid #8CBA34;
+}
+
+/*---< pager style >-----------------------------------------------------------------------------*/
+
+.pager
+{
+    display:inline-block;
+}
+
+.pager-list,
+.pager > ul
+{
+    float:left;
+}
+
+.pager-item,
+.pager > div
+{
+    float:left;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    text-align:center;
+}
+
+.pager li{
+	width:15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.pager-item:hover,
+.pager > div:hover
+{
+    text-decoration:underline;
+}
+
+.pager-item .btn-prev,
+.pager > div:first-child a,
+.pager > div:first-child span
+{
+	width:15px;
+	height:15px;
+	background: url("../images/btn-prev.png") no-repeat center;
+}
+
+.pager-item .btn-prev,
+.pager > div:last-child a,
+.pager > div:last-child span
+{
+	width:15px;
+	height:15px;
+	background: url("../images/btn-next.png") no-repeat center;
+}
+
+/* --- table style ----------------------------------------------------------------------- */
+main .table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	border-top: 2px solid #8cba35;
+}
+
+main .table input[type=text],
+main .table input[type=password],
+main .table input[type=email],
+main .table input[type=date],
+main .table input[type=number],
+main .table select
+{
+	width:90%;
+	vertical-align: middle;
+	height: 24px;
+	line-height: 24px;
+	text-indent: 5px;
+	border:1px solid #e9e9e9;
+	border-radius: 5px; 
+}
+
+main .table input[type=text].width-auto,
+main .table input[type=password].width-auto,
+main .table input[type=number].width-auto,
+main .table select.width-auto{
+	width: auto;
+}
+
+main .table input[type=text].width-half,
+main .table input[type=password].width-half,
+main .table input[type=email].width-half,
+main .table input[type=date].width-half,
+main .table select.width-half{
+	width: 200px;
+}
+
+main .table input[type=text].width-small,
+main .table input[type=password].width-small,
+main .table select.width-small{
+	width: 50px;
+}
+
+main .table input[type=text].width-small,
+main .table input[type=password].width-small,
+main .table select.width-auto{
+	width: auto;
+}
+
+main .table textarea,
+main .table .textarea{
+	/* border:1px solid #e9e9e9;
+	border-radius: 10px; */
+	
+	padding: 5px;
+	width:100%;
+	min-height:400px;
+	
+	line-height: 24px; 
+	/* text-align: center; */
+}
+
+main .table.border-top-default {
+	border-top: 1px solid #e9e9e9;
+}
+
+main .table.border{
+	border-left:1px solid #e9e9e9;
+	border-right:1px solid #e9e9e9;	
+}
+
+main .table.border-top-none{
+	border-top:0px solid #fff;
+}
+
+
+main .table.h50 th,
+main .table.h50 td
+{
+	height: 50px;
+}
+
+main .table tr, main .table .tr {
+	display: table-row;
+	height: 30px;
+}
+
+main .table tr.content, main .table .tr.conent {
+	display: table-row;
+	height:auto;
+	min-height: 200px;	
+	line-height: 1.5em;
+	color: #393939;	
+}
+
+main .table tr.hover:hover{
+	background: #d6f4c1;
+	cursor:pointer;
+}
+
+/* --- 셀의 모양 -------------------------- */
+
+main .table td, 
+main .table th, 
+main .table .td,
+main .table .th {
+	display: table-cell;
+	text-align: center;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+main .table.dashed td, 
+main .table.dashed th, 
+main .table.dashed .td,
+main .table.dashed .th {	
+	border-bottom: 1px dashed #b0b0b0;
+}
+
+main .table th, main .table .th {
+	background: #f5f5f5 url("../images/bg-title-sp.png") no-repeat left
+		center;
+}
+
+main .table th:first-child, main .table .th:first-child {
+	background: #f5f5f5;
+}
+
+main .table th.w40, main .table td.w40, main .table .th.w40, main .table .td.w40
+{
+	width: 40px;
+}
+
+main .table th.w60, main .table td.w60, main .table .th.w60, main .table .td.w60
+{
+	width: 60px;
+}
+
+main .table th.w100, main .table td.w100, main .table .th.w100, main .table .td.w100
+{
+	width: 100px;
+}
+
+main .table th.w150, main .table td.w150, main .table .th.w150, main .table .td.w150
+{
+	width: 150px;
+}
+
+main .table th.w180, main .table td.w180, main .table .th.w180, main .table .td.w180
+{
+	width: 180px;
+}
+
+main .table tr.content td,
+main .table .tr.conent td{
+	text-align: left;
+	padding: 10px;
+}
+
+main .table tr.hidden,
+main .table .tr.hidden{
+	display: none;
+}
+
+
+main .table td.title, 
+main .table .td.title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+main .table td.indent {
+	padding-left:10px;
+}
+
+main .table td.indent.inner {
+	padding-left:30px;
+}
+
+main .table td .re{
+	padding-left: 20px;
+    background: url(../images/icon-re.png) no-repeat left -5px;
+}
+
+main .table td.text-align-left{
+	text-align: left;
+}
+
+main .table td.text-align-center{
+	text-align: center;
+}
+
+main .table td.text-align-right{
+	text-align: right;
+}
+
+/* --- to override ----------------------------------------------------------------------------------------- */
+
+main .hidden{
+	display: none;
+}
+
+/* --- new style ---------------------------------------------------------------------------- */
+main .table td.-text-.indent{
+	indent: 10px;
+}
+
+main .table td .-margin-.left{
+	margin-left: 10px;
+}
+
+main .table td .-margin-.left.l5{
+	margin-left: 5px;
+}
+
+main .table td .width.auto{
+	width:auto;
+}
+
+main .table td.-text-.left{
+	text-align: left;
+}
+
+main .table td.-text-.right{
+	text-align: right;
+}
+
+/* td 태그 안에 있는 모든 img, label, input을 한번에 수직 가운데 정렬 하는 스타일 */
+main .table td.-text-.vertical.center > img,
+main .table td.-text-.vertical.center > label,
+main .table td.-text-.vertical.center > input{
+	vertical-align: middle;
+}
+
+/* td 태그 안에 있는 모든 img, label, input에 각각 수직 가운데 정렬을 지정하는 스타일 */
+main .table td input.-text-.vertical.center,
+main .table td img.-text-.vertical.center,
+main .table td label.-text-.vertical.center{
+	vertical-align: middle;
+}
+
+
+
+/* ----- player ------------------------------------------------------------------------ */
+main .player{
+	display:inline-block;
+	cursor: pointer;
+    width: 181px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ff7e00;
+    border-radius: 10px;
+    background: radial-gradient(ellipse at center, #ffd3a9 0%,#ff7e00 100%);
+}
+
+main .player > a,
+main .tools > a
+ {
+    color: #fff;
+    font-size: 14px;
+    font-family: "맑은고딕", "고딕", sans-serif;
+    font-weight: bold;
+}
+
+main .tools{
+	display:inline-block;
+	cursor: pointer;
+    width: 181px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #76973e;
+    border-radius: 10px;
+    background: radial-gradient(ellipse at center, #8cb34a 0%,#76973e 100%);
+}
+
+/* === Main Component ===================================================== */
+/* --- pager style -------------------------------------- */
+.-pager-{
+	
+}
+
+
+/* ==== Desktop만을 위한 Style -- 너비 960px 이상 =========================================================== */
+/* @media all and (min-width:960px) {
+} */
+
+/* ==== 테블릿 이하에서 달라질 공통 Style 오버라이드-- 너비 959px 이하 =========================================================== */
+/* @media all and (max-width:959px) {
+	main {
+		visual을 없애면서 마진을 주게 됨.
+		margin-top: 50px;
+		width: 100%;
+		padding: 0px;
+	}
+	main .breadcrumb {
+		display: none;
+	}
+	main .main.title {
+		display: none;
+	}
+} */
+
+/* ==== 중간 크기 장치만을 위한 Style -- 너비 640px~ 959px=========================================================== */
+/* @media all and (min-width:640px) and (max-width:959px) {
+} */
+
+/* ==== 스마트 폰처럼 작은 크기 장치만을 위한 Style -- 너비 639px 이하=========================================================== */
+/* @media all and (max-width:639px) {
+} */

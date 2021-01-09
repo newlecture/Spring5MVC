@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+
+/* === <Component Style For All Media>=================================================== */
+
+/* ----#main-menu--------------------------------------- */
+
+#main-menu{		
+	display: inline-block;	
+}
+
+#main-menu a {
+	font-family: "맑은 고딕";
+	font-weight: bold;
+	font-size: 15px;
+	
+	color: #000;
+	text-decoration: none;
+}
+
+#main-menu a:hover {
+	color: #ff6a00;	
+}
+
+#main-menu > h1{
+	display: none;
+}
+
+#main-menu > ul{	
+	overflow: auto;
+}
+
+#main-menu > ul > li{
+	float: left;	
+	padding-left: 24px;
+	background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;	
+}
+
+#main-menu > ul > li:first-child{		
+	padding-left: 0px;
+	background: none;	
+}
+
+	/* -----#search-form-------------------------------------- */
+	#search-form{
+		border:5px solid #8cba34;
+		display: inline-block;
+		overflow: auto;
+	}
+	
+	#search-form h1,
+	#search-form legend{
+		display: none;
+	}
+	
+	#search-form label{	
+		height: 25px;	
+		line-height:25px;
+		display: block;	
+		float:left;
+		
+		font-family: "돋움", Arial, sans-serif;
+		font-size: 11px;
+		font-weight:bold;
+		color:#979797;
+		
+		background: #ffffff;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	
+	#search-form input[type="text"]{
+		width:222px;
+		height: 25px;
+		border:0px;	
+		display: block;
+		float:left;
+		text-indent: 5px;
+	}
+	
+	#search-form input[type=submit]{
+		background: url("../images/btn-zoom.png") no-repeat center;
+		width:31px;
+		height: 25px;
+		border: 0px;
+		vertical-align: middle;
+		display: block;	
+		float:left;
+		border-left:1px solid #8cba34;
+		
+		text-indent: -999px;
+	}
+
+
+/* === <Desktop Only> ===================================================================== */
+
+/* @media all and (min-width:961px){	 */
+		
+	#header {
+		position: static;
+		display: block;
+		height: 70px;
+		padding: 0px;
+		border-bottom: 3px solid #8CBA34;
+	}
+	
+	#header .content-container {
+		display: block;
+		width: 960px;
+		box-sizing: border-box;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#header .hamburger-button {
+		display: none;
+	}
+	#header .search-button {
+		display: none;
+	}
+	#header .content-container {
+		text-align: unset;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		height: inherit;
+	}
+	#header .content-container .logo {
+		display: inline-block;
+		position: absolute;
+		left: 0px;
+		top: 23px;
+	}
+	#header .content-container .main-menu {
+		
+	}
+	.sub-menu.top h1 {
+		
+	}
+	
+	
+	#header .content-container{
+		position: relative;
+		align-items: center;
+	}
+	
+	.hamburger-button,
+	.search-button,
+	.more-vert-button
+	{
+		display: none;
+	}
+	
+	#logo{	
+		position: absolute;
+		left:0px;
+		top:23px;
+	}
+	
+	/* ----#main-menu--------------------------------------- */
+	
+	#main-menu{			
+		position: absolute;
+		left:200px;
+		top:27px;
+	}
+	
+	/* -----#search-form----------------------------- */
+	#search-form{
+		position: absolute;
+		left:468px;
+		top:21px;
+	}
+	
+	/* -----#acount-menu------------------------------- */
+	#acount-menu{
+				
+		position: absolute;
+		right:0px;
+		top:20px;
+	}
+	
+	#acount-menu a{
+		
+		display: inline-block;
+		font-family: "맑은 고딕", "고딕", sans-serif;
+		font-size: 10px;
+		font-weight: bold;	
+		
+		color:#979797;
+		text-decoration: none;
+	}
+	
+	#acount-menu a:hover{
+		text-decoration:underline;
+	}
+	
+	#acount-menu > ul{	
+		overflow: auto;
+	}
+	
+	#acount-menu > ul > li{
+		float:left;
+		padding-left: 9px;
+		background: url("../images/bg-member-menu-sp.png") no-repeat 5px center; 
+	}
+	
+	#acount-menu > ul > li:first-child{	
+		padding-left: 0px;
+		background: none; 
+	}
+	
+	/* ------#member-menu-------------------------------- */
+	
+	#member-menu{
+		position: absolute;
+		right:0px;
+		top:40px;
+	}
+
+/* } */

@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/*--- reset style -----------------------------------------------------------*/
+
+/*--- common style -----------------------------------------------------------*/
+
+/*--- Layout Style------------------------------------------------------------------------------------------*/
+
+/*--- Component Style------------------------------------------------------------------------------------------*/
+#notice {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	line-height: 30px;
+	background: #8CBA34;
+	min-width: 90px;
+}
+
+#notice .content-container {
+	padding-left: 34px;
+	background: url("../images/icon-news.png") no-repeat 10px center;
+}
+
+#notice .title {
+	flex-grow: 1;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#information{
+	height: 170px;
+}
+
+	#information .text-center{
+		text-align: center;
+	}
+
+
+	#information .content-container{
+				
+		display: flex;	
+		
+		border-bottom: 1px solid #8cba34;
+	}
+	
+	#information .title{
+		color:#000;
+	    font-size: 14px;
+	    font-weight: bold;
+	}
+
+	#information section{
+		width:260px;
+		border-left: 1px solid #8cba34;
+		padding:25px 20px;
+	}
+	
+	#information section:first-child{
+		border-left: none;
+	}
+
+	#information .course-info{
+		flex-grow:1;
+	}
+	
+		#information .course-info .list{
+			box-sizing:border-box;
+		    border: 1px solid #B9B9B9;
+		    background: #e7f5ce;
+		    width: 410px;
+		    height: 90px;
+		    line-height: 75px;
+		    text-align: center;
+		    color: #5b5b5b;
+		    
+		    margin-top:20px;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		
+		#information .course-info .list li{
+			text-align: center;
+		}
+	
+	#information .guide{
+		
+	}
+	
+	#information .guide .margin-top{
+		margin-top: 20px;
+	}
+	
+	#information .notice{
+		
+	}
+	
+		#information .notice .title{
+			width: 110px;
+		    background: #83b129;
+		    
+		    font-size: 13px;
+		    font-weight: bold;
+		    color: #ffffff;
+		    height: 20px;
+		    line-height: 20px;
+		    text-align: center;
+		}
+		
+		#information .notice .list{
+			width: 240px;		   
+		    font-family: 돋움;
+		    font-size: 12px;
+		    
+		    margin-top:10px;
+		}
+		
+		#information .notice-title{
+			display: inline-block;
+		    width: 150px;
+		    overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		}
+		
+		#information .notice .list li
+		{
+			position: relative;
+		    margin-top: 5px;
+		    padding-left:10px;
+		    background: url("../images/point.png") no-repeat 0px center;
+		}
+		
+		#information .notice .list li .notice-title{
+			vertical-align: middle;
+		}
+		
+/* ----------------------------------------------------------------------- */
+
+.item-community-answerer{
+	overflow: hidden;
+}
+
+.list-answerer{
+    background: #00000077;
+    padding: 5px;
+    
+}
+
+.item-answerer{
+	height:50px;
+	color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #e9e9e999;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    display: flex;
+    padding: 5px;
+    background: #00000055;
+}
+
+.item-answerer>div:nth-child(1){
+	width:30px;
+	line-height:40px;
+	
+	text-align:center;
+	height: inherit;
+	
+}
+
+.item-answerer>div:nth-child(2){
+		
+}
+
+	.item-answerer>div:nth-child(2)>span{
+		display:inline-block;
+		background: #777777 url("../../../resource/images/profile.png") no-repeat center;
+		background-size:contain;
+		width:35px;
+		height: 35px;
+		border-radius: 25px;
+		
+	}
+
+.item-answerer>div:nth-child(3){
+	font-size:11px;
+	padding:5px 5px 5px 10px;
+}
+
+/*---- Responsive Style----------------------------------------------------------------------------*/
+/* @media all and (min-width:960px) { */
+	.content-container {
+		display: block;
+		width: 960px;
+		box-sizing: border-box;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/* --- Notice Style---------------------------------------------------------------- */
+		
+	
+	#guide > div{
+		border-bottom: 1px solid #8cba34;
+	}
+	
+	main{
+		margin-top:20px;
+	}	
+
+	/* --- course Style--------------------------------------------------------------------------------- */
+
+
+
+
+/*}*/
+
+
+

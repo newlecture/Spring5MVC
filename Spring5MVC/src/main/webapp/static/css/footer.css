@@ -1,0 +1,42 @@
+@charset "UTF-8";
+#footer{
+	background: #313131;	
+	height: 100px;
+	padding:20px;	
+}
+
+#footer .content-container{
+	display: flex;
+	flex-flow:row wrap;
+	flex:1;
+}
+
+#footer-logo{
+	width:205px;
+}
+
+#company-info{
+	width:755px;
+	display: flex;
+	flex-flow:column;
+}
+
+#company-info dl{
+	display: flex;
+	flex-flow:row wrap;	
+}
+
+#company-info dl dd{
+	margin-right:50px;
+}
+
+
+/* --- mobile ----------------------------------------------------- */
+/* #footer {
+    height: 50px;
+    line-height: 50px;
+    background: #313131;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+} */

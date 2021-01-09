@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* @IMPORT url("normalize.css"); */
+@IMPORT url("reset.css");
+@IMPORT url("style.css");
+@IMPORT url("header.css");
+@IMPORT url("footer.css");
+
+.content-container {	
+	margin-left: auto;
+	margin-right: auto;
+    width: 960px;
+	height: inherit;
+    position:relative;
+}
+
+#body{
+	min-height: 300px;
+	border-top:5px solid #8CBA34;
+	margin-top:1px;	
+}
+
+
+#body.content-container{   
+	display: flex;
+}
+
+#aside {
+    /*-ms-grid-row:1;
+    -ms-grid-column:1;*/
+    width: 205px;
+	
+    height: inherit;    
+	/*float: left;*/
+}
+
+#main {
+    /*-ms-grid-row:1;
+    -ms-grid-column:2;*/
+    width: 755px;
+
+    position: relative;
+	height: inherit;	
+	/*float: left;*/    
+}

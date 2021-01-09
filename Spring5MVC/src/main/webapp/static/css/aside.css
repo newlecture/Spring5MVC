@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.aside {
+	min-height: inherit;
+	width: 205px;
+	float: left;
+	background: url("../images/bg-aside-title.png") no-repeat;
+}
+
+.aside .margin-top{
+	margin-top: 45px;
+}
+
+.aside > h1 {
+	font-family: 맑은 고딕, 고딕, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	margin-top: 43px;
+}
+
+.aside .menu.text-menu {
+	margin-top: 20px;
+	width: 180px;
+}
+
+.aside .menu.text-menu > h1 {
+	font-family: 맑은 고딕, 고딕, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 26px;
+	background: url(../images/icon-recommend.png) no-repeat left center;
+}
+
+.aside .menu.text-menu li {
+	background: url("../images/bg-aside-menu-hsp.png") repeat-x left bottom;
+	height: 26px;
+	line-height: 26px;
+}
+
+.aside .menu.text-menu li:last-child {
+	border-bottom: 1px solid #d9d9d9;
+	background: none;
+}
+
+.aside .menu.text-menu li .current {
+    background: url(../images/icon-current.png) no-repeat 15px center;
+}
+
+.aside .menu.text-menu li a {
+	font-family: 맑은 고딕, 고딕, sans-serif;
+	font-weight: bold;
+	color: #808080;
+	padding-left: 26px;
+	text-decoration: none;
+}
+
+.aside .menu.text-menu a:hover, .aside-menu .active {
+	background: url("../images/icon-current.png") no-repeat 15px center;
+}
+
+.aside .menu.first {
+	margin-top: 45px;	
+}
+
+.aside .menu.first > h1 {
+	color: #ffffff;
+	height: 27px;
+	line-height: 27px;
+	padding-left: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 1px #000000;
+	background: url(../images/bg-aside-sub-title.png) no-repeat 0px 0px;
+}
+
+.aside .menu.text-menu.first ul,
+.aside .menu.text-menu.first .list {
+	border-top: none;
+	margin-top: 0px;
+}
+
+.aside .menu {
+	margin-top: 20px;
+}
+
+.aside .menu > h1 {
+	font-family: 맑은 고딕, 고딕, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 26px;
+	background: url("../images/icon-recommend.png") no-repeat left center;
+}
+
+.aside .menu > ul {
+	margin-top: 10px;
+}
+
+/* ==== Desktop만을 위한 Style -- 너비 960px 이상 =========================================================== */
+@media all and (min-width:960px) {
+}
+
+/* ==== 테블릿 이하에서 달라질 공통 Style 오버라이드-- 너비 959px 이하 =========================================================== */
+@media all and (max-width:959px) {
+	#aside {		
+		position: fixed;
+		top: 0px;
+		left: -205px;
+		height: 100%;
+		background: #ffffff;
+		z-index: 101;
+	}
+}
+
+/* ==== 중간 크기 장치만을 위한 Style -- 너비 640px~ 959px=========================================================== */
+@media all and (min-width:640px) and (max-width:959px) {
+		#aside {		
+		position: fixed;
+		top: 0px;
+		left: -205px;
+		height: 100%;
+		background: #ffffff;
+		z-index: 101;
+	}
+}
+
+/* ==== 스마트 폰처럼 작은 크기 장치만을 위한 Style -- 너비 639px 이하=========================================================== */
+@media all and (max-width:639px) {
+}
