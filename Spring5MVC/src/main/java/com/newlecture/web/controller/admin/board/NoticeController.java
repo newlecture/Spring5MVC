@@ -8,8 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller("adminNoticeController")
@@ -25,9 +26,15 @@ public class NoticeController { // <bean name="adminNoticeController" class="com
 		return "admin.board.notice.list";
 	}
 	
-	@RequestMapping("reg")
+	@GetMapping("reg")
+	public String reg(){
+	
+		return "admin.board.notice.reg";
+	}
+	
+	@PostMapping("reg")
 	public String reg(String title, String content, MultipartFile[] files, String category, String[] foods, String food, HttpServletRequest request) throws IllegalStateException, IOException {
-		
+				
 		for(MultipartFile file : files) {
 			long size = file.getSize();
 			String fileName = file.getOriginalFilename();
@@ -36,7 +43,7 @@ public class NoticeController { // <bean name="adminNoticeController" class="com
 			String webPath = "/static/upload";
 			String realPath = ctx.getRealPath(webPath);
 			System.out.printf("realPath : %s\n", realPath);
-			// 업로드하기 위한 경로가 없을 경우
+			// �뾽濡쒕뱶�븯湲� �쐞�븳 寃쎈줈媛� �뾾�쓣 寃쎌슦
 			File savePath = new File(realPath);
 			if(!savePath.exists())
 				savePath.mkdirs();
